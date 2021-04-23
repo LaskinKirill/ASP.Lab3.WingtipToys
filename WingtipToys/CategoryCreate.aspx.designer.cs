@@ -51,13 +51,13 @@ namespace WingtipToys
         protected global::System.Web.UI.WebControls.Label LabelPrice;
 
         /// <summary>
-        /// TextBox2 элемент управления.
+        /// Price элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox Price;
 
         /// <summary>
         /// LabelCategory элемент управления.
@@ -76,6 +76,15 @@ namespace WingtipToys
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelDescription;
+
+        /// <summary>
+        /// Description элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea Description;
 
         /// <summary>
         /// DescriptionLengthValidator элемент управления.

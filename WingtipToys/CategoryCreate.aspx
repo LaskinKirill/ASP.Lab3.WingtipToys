@@ -11,7 +11,7 @@
         <br />
         <asp:Label ID="LabelPrice" runat="server" AssociatedControlID="Price" Text="Price:"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox2" runat="server" Width="157px"></asp:TextBox>
+        <asp:TextBox ID="Price" runat="server" Width="157px"></asp:TextBox>
         <br />
         <br />
         <asp:Label ID="LabelCategory" runat="server" AssociatedControlID="Category" Text="Category:"></asp:Label>
@@ -20,7 +20,7 @@
         <br />
         <asp:Label ID="LabelDescription" runat="server" AssociatedControlID="Description" Text="Description:"></asp:Label>
         <br />
-        <textarea id="Description" cols="20" name="S1" ></textarea>&nbsp;
+        <textarea id="Description" runat="server"  cols="20" name="S1" ></textarea>&nbsp;
         <asp:RegularExpressionValidator ID="DescriptionLengthValidator" runat="server" ControlToValidate="Description" ErrorMessage="Description should be maximum 500 symbols long" ValidationExpression="^.{0,500}$"></asp:RegularExpressionValidator>
         <br />
         <asp:Label ID="LabelProductimageURL" runat="server" AssociatedControlID="ProductimageURL" Text="Product image URL:"></asp:Label>

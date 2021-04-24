@@ -17,10 +17,15 @@ namespace WingtipToys
         {
 
         }
+        protected void ValidateUnique(object source, ServerValidateEventArgs args)
+        {
+            args.IsValid = !_service.CategoryExists(args.Value);
+        }
 
-       
 
-        protected void CreateProduct_Click(object sender, EventArgs e)
+
+     
+        protected void Button1_Click(object sender, EventArgs e)
         {
             if (IsValid)
             {
@@ -30,7 +35,16 @@ namespace WingtipToys
                     Description = Description.Value
                 };
                 var created = _service.CreateCategory(category);
-                
+                MesageCategoryName.Text = created.CategoryName;
+            }
+        }
+
+        protected override void OnPreRender(EventArgs e)
+        {
+            if (IsPostBack && IsValid)
+            {
+                CreateCategoryForm.Visible = false;
+                SuccessBlock.Visible = true;
             }
         }
 

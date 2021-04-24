@@ -15,6 +15,15 @@ namespace WingtipToys
     {
 
         /// <summary>
+        /// CreateCategoryForm элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl CreateCategoryForm;
+
+        /// <summary>
         /// LabelName элемент управления.
         /// </summary>
         /// <remarks>
@@ -42,22 +51,13 @@ namespace WingtipToys
         protected global::System.Web.UI.WebControls.RequiredFieldValidator NameValidator;
 
         /// <summary>
-        /// LabelPrice элемент управления.
+        /// CategoryUniqueValidator элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelPrice;
-
-        /// <summary>
-        /// Price элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Price;
+        protected global::System.Web.UI.WebControls.CustomValidator CategoryUniqueValidator;
 
         /// <summary>
         /// LabelCategory элемент управления.
@@ -67,6 +67,15 @@ namespace WingtipToys
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelCategory;
+
+        /// <summary>
+        /// TextAreaCategory элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea TextAreaCategory;
 
         /// <summary>
         /// LabelDescription элемент управления.
@@ -96,39 +105,30 @@ namespace WingtipToys
         protected global::System.Web.UI.WebControls.RegularExpressionValidator DescriptionLengthValidator;
 
         /// <summary>
-        /// LabelProductimageURL элемент управления.
+        /// CreateCategory элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelProductimageURL;
+        protected global::System.Web.UI.WebControls.Button CreateCategory;
 
         /// <summary>
-        /// TextBox4 элемент управления.
+        /// SuccessBlock элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl SuccessBlock;
 
         /// <summary>
-        /// CreateProduct элемент управления.
+        /// MesageCategoryName элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CreateProduct;
-
-        /// <summary>
-        /// ValidationSummary1 элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
+        protected global::System.Web.UI.WebControls.Literal MesageCategoryName;
     }
 }
